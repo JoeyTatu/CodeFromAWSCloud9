@@ -10,7 +10,7 @@
     // Check connection
     if ($db->connect_error) {
         //die('Could not connect: ' . mysql_error());
-        header( 'Location: ../error.php' ) ;
+        header( 'Location: ../error.html' ) ;
     } 
     
     if(count($_POST)>0){
@@ -47,9 +47,9 @@
         
 //             if($password == $psw){
 //                 $valid = true;
-//             }
-// //             $successDB = true;
-//         }
+            // }
+            //  $successDB = true;
+        // }
 	}
     
     
@@ -86,17 +86,23 @@
             <!--Give this a class or id to change the style-->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../htmlHome/index.php">Home <span class="sr-only"></span></a>
+                    <a class="nav-link" href="../artist.home.php" class="active">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../htmlHome/about.php">Profile</a>
+                    <a class="nav-link" href="../artist/profile.php">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../htmlMedical/medical.php">Artist Page</a>
+                    <a class="nav-link" href="../artist/page.php">Artist Page</a>
                         <!-- code for making the nav link text white when on page class="active"-->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../htmlEvents/events.php">Apointments</a>
+                    <a class="nav-link" href="../artist/appointments.php">Apointments</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="../artist/stock.php">Stock control</a>
+                </li>
+                <li class="nav-item">
+                    <bull class="nav-link">&bull;</bull>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" onclick="document.getElementById('id01').style.display='block'" style="position: static; right: 15px;">Login</a>
@@ -106,18 +112,17 @@
                 </li>
                 <li class="nav-item">
                     <small>
-                        <!-- This code shows the name of the user when they login, or if the login failed -->
-                    <!--<?php-->
-                    <!--if(!isset($bFieldRequired)){ /* set variable lname from database */-->
-                    <!--    echo ("");-->
-                    <!--}-->
-                    <!--else if ((isset($successDB) && $successDB) && (isset($valid) && $valid)){ -->
-                    <!--    echo ("<font color='white'>Hello ".$logged_in_name."</font>"); /* shows e.g. "Hello John Smith" on successful login  */-->
-                    <!--}-->
-                    <!--else{ //failed login/passwords don't match/errors/etc-->
-                    <!--    echo ("<font color='white'>Login failed. Try again.</font>"); /* catchall for errors with login  */-->
-                    <!--}-->
-                    <!--?>-->
+                    <?php
+                    /*if(!isset($bFieldRequired)){ /* set variable lname from database */
+                    /*    echo ("");
+                    }
+                    else if ((isset($successDB) && $successDB) && (isset($valid) && $valid)){ 
+                        echo ("<font color='white'>Hello ".$logged_in_name."</font>"); /* shows e.g. "Hello John Smith" on successful login  */
+                    /*}
+                    else{ //failed login/passwords don't match/errors/etc
+                        echo ("<font color='white'>Login failed. Try again.</font>"); /* catchall for errors with login */
+                    /*}*/
+                    ?>
                     </small>
                 </li>
             </ul>
@@ -147,7 +152,7 @@
         <center><!-- Main jumbotron for a primary marketing message or call to action -->
             <div class="jumbotron">
                 <div class="container">
-                    <h1 class="display-3"><img src="https://images.pexels.com/photos/955938/pexels-photo-955938.jpeg" class="img-responsive" alt="3B - Artist Home page" height="600px" width=""></h1> <!--Don't know how to make this heading responsive-->
+                    <h1 class="display-3"><img src="https://images.pexels.com/photos/955938/pexels-photo-955938.jpeg" height="400px" class="img-responsive" alt="3B - Artist Home page" height="600px" width=""></h1> <!--Don't know how to make this heading responsive-->
                     <h3>
                     <?php 
                         $logged_in_name = "John Smtih"; 
@@ -171,21 +176,21 @@
             <div class="row">
 
                 <div class="col-md-4">
-                    <h2>Sign Up</h2>
-                    <p>Sign up here to avail of amazing deals. </p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Sign Up &raquo;</a></p>
+                    <h2>Appointments</h2>
+                    <p>Show and edit your appointments </p>
+                    <p><a class="btn btn-secondary" href="../artist/appointments.php" role="button">Appointments</a></p>
                 </div>
 
                 <div class="col-md-4">
-                    <h2>Login</h2>
-                    <p>Click here to login if you are already a member. If you are not a member please sign up. </p>
-                    <p><a class="btn btn-secondary" href="" role="button" onclick="setLoginCookie(); document.getElementById('id01').style.display='block'">Login &raquo;</a></p>
+                    <h2>Artist's Page</h2>
+                    <p>View and edit your public Artist's Page for your business</p>
+                    <p><a class="btn btn-secondary" href="../artist/page.php" role="button">Artist's Page</a></p>
                 </div>
 
                 <div class="col-md-4">
-                    <h2>Continue as Guest</h2>
-                    <p>Click here if you would like to continue as a guest.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button" onclick="setGuestCookie();">Guest &raquo;</a></p>
+                    <h2>Messages</h2>
+                    <p>View and send messages to clients</p>
+                    <p><a class="btn btn-secondary" href="../artist/messages.php" role="button">Messages</a></p>
                 </div>
 
             </div>
@@ -220,7 +225,7 @@
                  
                 <div class="col-md-4">
                     <center>
-                    <p><a class="btn btn-secondary" href="#" role="button">Register &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Appointments &raquo;</a></p>
                     </center>
                 </div>
 
@@ -291,67 +296,10 @@
             }
         }
     </script>
-    <!--End of Script to show hide the div-->
-
-
-    <!--End of code for hidden login div-->
-
-    <!--Beginning of PHP Cart Code-->
-
-
-    
-
-    
-    
-    
-    <!--Cookie Code found at https://www.w3schools.com/js/js_cookies.asp-->
-//   <script> 
-//       function setGuestCookie() {
-//         var d = new Date();
-//         status="status";
-//         guest="guest";
-//         d.setTime(d.getTime() + (10*24*60*60*1000));
-//          var expires = "expires="+ d.toUTCString();
-//          document.cookie = status + "=" + guest + ";" + expires + ";path=/";
-//      }
-//     </script> 
-    
-//     <script> 
-//       function setLoginCookie() {
-//         var d = new Date();
-//         status="status";
-//         login="login";
-//         d.setTime(d.getTime() + (10*24*60*60*1000));
-//          var expires = "expires="+ d.toUTCString();
-//          document.cookie = status + "=" + login + ";" + expires + ";path=/";
-//      }
-     
-//      function getCookie(userStatus) {
-//     var state = userStatus + "=";
-    
-//     var decodedCookie = decodeURIComponent(document.cookie);
-    
-//     var ca = decodedCookie.split(';');
-    
-//     for(var i = 0; i <ca.length; i++) {
-//         var c = ca[i];
-//         while (c.charAt(0) == ' ') {
-//             c = c.substring(1);
-//         }
-//         if (c.indexOf(name) == 0) {
-//             return c.substring(name.length, c.length);
-//         }
-//     }
-//     return "";
-// }
-     
-     
-//     </script> 
 
 
     <!--<footer class="footer"></footer>-->
     <footer class="footerInBottomBar container">
-        <p>&copy; <script>document.write(new Date().getFullYear());</script> Body Branding Bookings (3B)</p>
     </footer>
 
 
