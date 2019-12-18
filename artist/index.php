@@ -53,7 +53,8 @@
 	}
     
     
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -96,7 +97,7 @@
                         <!-- code for making the nav link text white when on page class="active"-->
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../artist/appointments.php">Apointments</a>
+                    <a class="nav-link" href="../artist/appointments">Apointments</a>
                 </li>
                  <li class="nav-item">
                     <a class="nav-link" href="../artist/stock.php">Stock control</a>
@@ -178,7 +179,7 @@
                 <div class="col-md-4">
                     <h2>Appointments</h2>
                     <p>Show and edit your appointments </p>
-                    <p><a class="btn btn-secondary" href="../artist/appointments.php" role="button">Appointments</a></p>
+                    <p><a class="btn btn-secondary" href="../artist/appointments" role="button">Appointments</a></p>
                 </div>
 
                 <div class="col-md-4">

@@ -17,8 +17,8 @@ a { color: #1155a3; }
 #content > div { width:99% }
 
 /* LAYOUT */
-#header { background: #001328 url('layout/header.png') 0 0 repeat-x; padding-left: 10px;}
-#header .bg-help { background: url('layout/header-in.png') 50% 0 no-repeat; padding:1px 0; width:100%; min-height:80px;}
+#header { background: gray /*#001328 url('layout/header.png') 0 0 repeat-x*/; padding-left: 10px; text-align: center}
+#header .bg-help { /*background: url('layout/header-in.png') 50% 0 no-repeat;*/ background: gray ;padding:1px 0; width:100%; min-height:80px;padding-top:50px}
 #main { padding: 0px 5px 0px 5px; xbackground: url('layout/shadow.png') repeat-x;  }
 #download { padding: 10px 0px 0px 20px; color: #666666; background: url('layout/main.png') 0 0 repeat-x; }
 	
