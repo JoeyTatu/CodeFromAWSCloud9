@@ -41,13 +41,13 @@
             <!--Give this a class or id to change the style-->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../artist.home.php">Home <span class="sr-only"></span></a>
+                    <a class="nav-link" href="../artist/index.php">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../artist/profile.php">Profile</a>
+                    <a class="nav-link" href="../artist/profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../artist/page.php">Artist Page</a>
+                    <a class="nav-link" href="../artist/page">Artist Page</a>
                         <!-- code for making the nav link text white when on page class="active"-->
                 </li>
                 <li class="nav-item">

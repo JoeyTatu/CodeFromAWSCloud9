@@ -87,13 +87,13 @@
             <!--Give this a class or id to change the style-->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../artist.home.php" class="active">Home <span class="sr-only"></span></a>
+                    <a class="nav-link" href="../artist/index.php">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../artist/profile.php">Profile</a>
+                    <a class="nav-link" href="../artist/profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../artist/page.php">Artist Page</a>
+                    <a class="nav-link" href="../artist/page">Artist Page</a>
                         <!-- code for making the nav link text white when on page class="active"-->
                 </li>
                 <li class="nav-item">
@@ -185,13 +185,13 @@
                 <div class="col-md-4">
                     <h2>Artist's Page</h2>
                     <p>View and edit your public Artist's Page for your business</p>
-                    <p><a class="btn btn-secondary" href="../artist/page.php" role="button">Artist's Page</a></p>
+                    <p><a class="btn btn-secondary" href="../artist/page" role="button">Artist's Page</a></p>
                 </div>
 
                 <div class="col-md-4">
                     <h2>Messages</h2>
                     <p>View and send messages to clients</p>
-                    <p><a class="btn btn-secondary" href="../artist/messages.php" role="button">Messages</a></p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Messages</a></p>
                 </div>
 
             </div>

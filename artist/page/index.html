@@ -26,7 +26,28 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/popper.js"></script>
-
+	<style>
+	div.gallery {
+	  margin: 5px;
+	  border: 1px solid #ccc;
+	  float: left;
+	  width: 180px;
+	}
+	
+	div.gallery:hover {
+	  border: 1px solid #777;
+	}
+	
+	div.gallery img {
+	  width: 100%;
+	  height: auto;
+	}
+	
+	div.desc {
+	  padding: 15px;
+	  text-align: center;
+	}
+	</style>
 
     <title>Body Branding Bookings</title>
     <body>>
@@ -45,10 +66,10 @@
                     <a class="nav-link" href="../artist/index.php">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../artist/profile" class="active">Profile</a>
+                    <a class="nav-link" href="../artist/profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../artist/page">Artist Page</a>
+                    <a class="nav-link" href="../artist/page" class="active">Artist Page</a>
                         <!-- code for making the nav link text white when on page class="active"-->
                 </li>
                 <li class="nav-item">
@@ -64,7 +85,7 @@
                     <a class="nav-link" onclick="document.getElementById('id01').style.display='block'" style="position: static; right: 15px;">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" style="position: static; right: 15px;">Register</a>
+                    <a class="nav-link" href="../htmlHome/registerIndex.php" style="position: static; right: 15px;">Register</a>
                 </li>
                 <li class="nav-item">
                     <small>
@@ -86,14 +107,14 @@
 	<!-- END NAVIGATION -->
 <center>
 	<!-- START HOME -->
-	<section id="home" class="templatemo-home-profile">
+	<section id="home" class="templatemo-home-page">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 col-sm-1"></div>
 				<div class="col-md-8 col-sm-10">
-					<h1 class="tm-home-title"><strong>John Smith</strong></h1>
-					<h2 class="tm-home-subtitle">Tattooist</h2>
-					<h3 class="tm-home-subtitle">Been tattooing 14 years. working in InkCetra.</h3>
+					<h1 class="tm-home-title"><strong>InkCetra</strong></h1>
+					<h2 class="tm-home-subtitle">Mayor Square, IFSC, Dublin 1</h2>
+					<h3 class="tm-home-subtitle">Established in 2005.</h3>
 					<!--<a href="#work" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a>-->
 				</div>
 				<div class="col-md-2 col-sm-1"></div>
@@ -107,22 +128,59 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-6">					
-					<h2 class="title">My <strong>Profile</strong></h2>
-					<p><img src="../../media/images/baz3.jpg"></img></p>
-					<p></p>
-					<p style="font-size:20px;">Name: John Smith</p>
-					<p style="font-size:20px;">Birthday: 1 December, 1986</p>
+					<h2 class="title"><strong>Profile</strong></h2>
+					<p style="font-size:20px;">InkCetra</p>
+					<p style="font-size:20px;">Founded in 2015</p>
 					<p style="font-size:20px;">Address: Mayor Square, Dublin 1</p>
-					<p style="font-size:20px;">Phone: (Tattoo Shop) 014123456</p>
-					<p style="font-size:20px;">Email: john@inkcetra.ie</p>
-					<p style="font-size:20px;">Website:<a href="#" class="tm-red-text">www.inkcetra.com</a></p>
+					<p style="font-size:20px;">Phone: 014123456</p>
+					<p style="font-size:20px;">Email: hello@inkcetra.ie</p>
+					<p style="font-size:20px;">Website :<a href="#" class="tm-red-text">www.inkcetra.com</a></p>
 				</div>
-
+			</div>
+		</div>
+	</section>
+		<section id="gallery" class="tm-padding-top-bottom-100">
+		<div class="container">
+					<h2 class="title"><strong>Gallery<br/></strong></h2>
+					<div class="gallery">
+				  <a target="_blank" href="#">
+				    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/5BFC/production/_108984532_kenshotattoo.jpg" alt="Japanese Tattoo" width="600" height="400">
+				  </a>
+				  <div class="desc">Tattooist Kensho II says Japanese-style dragons are a popular request</div>
+				</div>
+				
+				<div class="gallery">
+				  <a target="_blank" href="#">
+				    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/17E19/production/_108971879_highressmilingkyle.jpg" alt="Tebori tattooing" width="600" height="400">
+				  </a>
+				  <div class="desc">Though it looks gruesome, Kyle describes the pain of tebori tattooing as a three or four out of 10</div>
+				</div>
+				
+				<div class="gallery">
+				  <a target="_blank" href="#">
+				    <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/BDF5/production/_108992684_yakuzatattoos.jpg" alt="Festival in Tokyo" width="600" height="400">
+				  </a>
+				  <div class="desc">Yakuza members display their tattoos during a festival in Tokyo</div>
+				</div>
+				
+				<div class="gallery">
+				  <a target="_blank" href="#">
+				    <img src="https://i.pinimg.com/originals/e9/3b/d8/e93bd8e691e5bf5c5c07b92b91f7a952.jpg" alt="loseup of man with face tattoos" width="600" height="400">
+				  </a>
+				<div class="desc">Closeup of man with face tattoos</div>
+				</div>
+				<div class="gallery">
+				  <a target="_blank" href="#">
+				    <img src="../../media/images/more.jpg" alt="More" width="600" height="400">
+				  </a>
+				<div class="desc">Click to visit the gallery</div>
+				</div>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- END RESUME -->
-
+	<hr />
 
 	<!-- START SOCIAL -->
 	<section id="social" class="tm-social">
@@ -135,7 +193,7 @@
 								<i class="fa fa-facebook"></i>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading tm-social-title">Follow me on</h4>
+								<h4 class="media-heading tm-social-title">Follow us on</h4>
 								<h3>Facebook</h3>
 							</div>
 						</a>
@@ -148,7 +206,7 @@
 								<i class="fa fa-twitter"></i>
 							</div>
 							<div class="media-body">
-								<h4 class="media-heading tm-social-title">Tweet me on</h4>
+								<h4 class="media-heading tm-social-title">Tweet us on</h4>
 								<h3>Twitter</h3>
 							</div>
 						</a>
